@@ -6,11 +6,11 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 const zines = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const SingleZine = styled.div`
-  border: 1px solid black;
+  border: 0px solid black;
 
   margin: 0 0 25px 0;
 
-  height: 300px;
+  height: auto;
   width: auto;
 `;
 
