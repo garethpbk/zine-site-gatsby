@@ -3,8 +3,6 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
-const zines = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
 const SingleZine = styled.div`
   border: 0px solid black;
 
@@ -20,9 +18,11 @@ class Home extends Component {
       const entry = zine.node;
       return (
         <Col key={entry.id} xs={12} sm={6} md={4}>
-          <SingleZine>
-            <img src={entry.coverImage.file.url} />
-          </SingleZine>
+          <Link to={`/zine/${entry.id}`}>
+            <SingleZine>
+              <img src={entry.coverImage.file.url} />
+            </SingleZine>
+          </Link>
         </Col>
       );
     });
