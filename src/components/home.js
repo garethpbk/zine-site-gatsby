@@ -19,8 +19,15 @@ const RandomButton = styled.button`
   background-color: steelblue;
   border: 0;
   color: white;
+  cursor: pointer;
   margin: 0 0 25px 0;
   padding: 15px;
+
+  &:hover {
+    background-color: white;
+    border: 2px dotted steelblue;
+    color: steelblue;
+  }
 `;
 
 class Home extends Component {
