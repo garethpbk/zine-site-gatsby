@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'True Grin Moon Bug Zine Archive',
+    title: 'True Grin Moon Bug Zine Library',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
